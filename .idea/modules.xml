@@ -9,6 +9,8 @@
       <module fileurl="file://$PROJECT_DIR$/20170911_wyb_login/20170911_wyb_login.iml" filepath="$PROJECT_DIR$/20170911_wyb_login/20170911_wyb_login.iml" />
       <module fileurl="file://$PROJECT_DIR$/20170918_wyb_StrutsCalculator/20170918_wyb_StrutsCalculator.iml" filepath="$PROJECT_DIR$/20170918_wyb_StrutsCalculator/20170918_wyb_StrutsCalculator.iml" />
       <module fileurl="file://$PROJECT_DIR$/20170918_wyb_StrutsLogin/20170918_wyb_StrutsLogin.iml" filepath="$PROJECT_DIR$/20170918_wyb_StrutsLogin/20170918_wyb_StrutsLogin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/20170920_wyb_Login_model/20170920_wyb_Login_model.iml" filepath="$PROJECT_DIR$/20170920_wyb_Login_model/20170920_wyb_Login_model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/20170920_wyb_StrutsCalculator_model/20170920_wyb_StrutsCalculator_model.iml" filepath="$PROJECT_DIR$/20170920_wyb_StrutsCalculator_model/20170920_wyb_StrutsCalculator_model.iml" />
       <module fileurl="file://$PROJECT_DIR$/daily.iml" filepath="$PROJECT_DIR$/daily.iml" />
     </modules>
   </component>
