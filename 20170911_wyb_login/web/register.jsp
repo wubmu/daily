@@ -1,19 +1,19 @@
 <%--
   Created by IntelliJ IDEA.
   User: 吴亚斌
-  Date: 2017/9/10
-  Time: 18:29
+  Date: 2017/9/18
+  Time: 18:10
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>注册页面</title>
+    <title>Title</title>
 </head>
 <body>
-<form wyb.action="" method="post">
-    用户名:<input type="text" name="username"><br>
-    密码:<input type="password" name="password"><br>
+<form action="addUserServlet">
+    用户名<input type="text" name="username">
+    密码<input type="password" name="password">
     <input type="submit" value="注册">
 </form>
 </body>

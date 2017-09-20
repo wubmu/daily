@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Struts 2-2.5.13" type="struts2">
+    <properties version="2.5.13" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/20170911_wyb_hello/lib/commons-fileupload.jar!/" />
+      <root url="jar://$PROJECT_DIR$/20170911_wyb_hello/lib/ognl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/20170911_wyb_hello/lib/commons-io.jar!/" />
+      <root url="jar://$PROJECT_DIR$/20170911_wyb_hello/lib/freemarker.jar!/" />
+      <root url="jar://$PROJECT_DIR$/20170911_wyb_hello/lib/commons-lang.jar!/" />
+      <root url="jar://$PROJECT_DIR$/20170911_wyb_hello/lib/struts2-core.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -9,14 +9,16 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by 吴亚斌 on 2017/9/8.
  */
-@WebServlet(name = "CheckServlet")
+@WebServlet(name = "CheckServlet",urlPatterns = "/checkServlet")
 public class CheckServlet extends HttpServlet {
     private BookDao bookDao=new BookDao();
-    private String error=null;
+    private Map<String,String> error= new HashMap();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
@@ -37,13 +39,15 @@ public class CheckServlet extends HttpServlet {
         if(code.toLowerCase().equals(inputCode.toLowerCase())) { // 验证码不区分大小写
             // 验证成功，跳转到成功页
         }else {
-            error="验证码不正确，请重新输入";
-            req.setAttribute("error",error);
+            error.put("codeError","验证码不正确，请重新输入");
         }
         if (bookDao.login(user)){
             req.getSession().setAttribute("user",user);
             resp.sendRedirect("addBook.jsp");
-
+        }else {
+            error.put("userError","用户名或密码不正确");
+            req.setAttribute("error",error);
+            req.getRequestDispatcher("index.jsp").forward(req,resp);
         }
 
     }

@@ -2,6 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/20170828_wyb_mycalculator/20170828_wyb_mycalculator.iml" filepath="$PROJECT_DIR$/20170828_wyb_mycalculator/20170828_wyb_mycalculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/20170901_wyb_BlackHome/20170901_wyb_BlackHome.iml" filepath="$PROJECT_DIR$/20170901_wyb_BlackHome/20170901_wyb_BlackHome.iml" />
+      <module fileurl="file://$PROJECT_DIR$/20170901_wyb_webCount/20170901_wyb_webCount.iml" filepath="$PROJECT_DIR$/20170901_wyb_webCount/20170901_wyb_webCount.iml" />
+      <module fileurl="file://$PROJECT_DIR$/20170911_wyb_hello/20170911_wyb_hello.iml" filepath="$PROJECT_DIR$/20170911_wyb_hello/20170911_wyb_hello.iml" />
+      <module fileurl="file://$PROJECT_DIR$/20170911_wyb_login/20170911_wyb_login.iml" filepath="$PROJECT_DIR$/20170911_wyb_login/20170911_wyb_login.iml" />
+      <module fileurl="file://$PROJECT_DIR$/20170918_wyb_StrutsCalculator/20170918_wyb_StrutsCalculator.iml" filepath="$PROJECT_DIR$/20170918_wyb_StrutsCalculator/20170918_wyb_StrutsCalculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/20170918_wyb_StrutsLogin/20170918_wyb_StrutsLogin.iml" filepath="$PROJECT_DIR$/20170918_wyb_StrutsLogin/20170918_wyb_StrutsLogin.iml" />
       <module fileurl="file://$PROJECT_DIR$/daily.iml" filepath="$PROJECT_DIR$/daily.iml" />
     </modules>
   </component>

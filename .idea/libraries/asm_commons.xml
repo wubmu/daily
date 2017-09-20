@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="asm-commons">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/20170911_wyb_hello/lib/asm-commons.jar!/" />
+      <root url="jar://$PROJECT_DIR$/20170911_wyb_hello/lib/asm.jar!/" />
+      <root url="jar://$PROJECT_DIR$/20170911_wyb_hello/lib/asm-tree.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

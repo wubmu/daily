@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="201700901_wyb_webCount:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/201700901_wyb_webCount_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="20170901_wyb_webCount/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="20170901_wyb_webCount" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
