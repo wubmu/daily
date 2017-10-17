@@ -6,13 +6,13 @@
 
 <struts>
     <package name="login" namespace="/" extends="struts-default">
-        <action name="login" class="nuc.wyb.action.LoginAction">
-            <result name="input">/index.jsp</result>
-            <result name="adminSuccess">/admin.jsp</result>
-            <result name="userSuccess">/user.jsp</result>
-            <result name="error">/error.jsp</result>
-        </action>
-        <action name="code" class="nuc.wyb.action.CodeAction">
-        </action>
+    <action name="login" class="nuc.wyb.action.LoginAction">
+        <result name="input">/index.jsp</result>
+        <result name="adminSuccess">/admin.jsp</result>
+        <result name="userSuccess">/user.jsp</result>
+        <result name="error">/error.jsp</result>
+    </action>
+    <action name="code" class="nuc.wyb.action.CodeAction">
+    </action>
     </package>
 </struts>
