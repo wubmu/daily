@@ -7,8 +7,27 @@
 <struts>
     <package name="re" extends="struts-default" namespace="/">
         <action name="register" class="com.wyb.action.RegisterAction">
-            <result name="success">register.jsp</result>
-            <result name="input">register.jsp</result>
+            <result name="success">success.jsp</result>
+            <result name="input">reg.jsp</result>
+            <result name="registOK">success.jsp</result>
+        </action>
+        <action name="code" class="com.wyb.action.CodeAction">
+        </action>
+        <action name="regist2" class="com.wyb.action.RegisterAction2" method="regist">
+            <result name="success">success.jsp</result>
+            <result name="input">reg2.jsp</result>
+            <result name="registOK">success.jsp</result>
+        </action>
+        <action name="regist3" class="com.wyb.action.RegisterAction3">
+            <result name="success">success.jsp</result>
+            <result name="input">reg2.jsp</result>
+            <result name="registOK">success.jsp</result>
+        </action>
+        <action name="login" class="com.wyb.action.LoginAction">
+            <result name="input">/index.jsp</result>
+            <result name="adminSuccess">/admin.jsp</result>
+            <result name="userSuccess">/user.jsp</result>
+            <result name="error">/error.jsp</result>
         </action>
     </package>
 </struts>

@@ -7,6 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="/struts-tags" prefix="s"%>
+<%@taglib prefix="sx" uri="/struts-dojo-tags"%>
 <html>
 
 <head>

@@ -4,6 +4,13 @@
         "-//Apache Struts//XWork Validator 1.0.2//EN"
         "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
 <validators>
+    <!--<field name="user">-->
+        <!--<field-validator type="visitor">-->
+            <!--<param name="context">useContext</param>-->
+            <!--<param name="appendPrefix">true</param>-->
+            <!--<message>用户的:</message>-->
+        <!--</field-validator>-->
+    <!--</field>-->
     <field name="email">
         <field-validator type="requiredstring">
             <message>邮箱不能为空</message>
@@ -12,12 +19,6 @@
             <message>邮箱格式不正确</message>
         </field-validator>
     </field>
-    <!--<field name="phone">-->
-                 <!--<field-validator type="regex">-->
-                     <!--<param name="regexExpression"><![CDATA[\d{11}]]></param>-->
-                     <!--<message>电话号码格式不正确</message>-->
-                 <!--</field-validator>-->
-             <!--</field>-->
     <field name="password">
         <field-validator type="requiredstring">
             <message>密码不能为空</message>
@@ -34,6 +35,35 @@
             repassword==password
             ]]></param>
             <message>两次密码不一致</message>
+        </field-validator>
+    </field>
+    <field name="phone">
+        <field-validator type="requiredstring">
+            <message>电话不为空</message>
+        </field-validator>
+        <field-validator type="regex">
+            <param name="regexExpression"><![CDATA[
+               13[0-9]{9}
+            ]]></param>
+            <message>电话不合法</message>
+        </field-validator>
+    </field>
+    <field name="name">
+        <field-validator type="requiredstring">
+            <message>真实姓名不能为空</message>
+        </field-validator>
+    </field>
+        <validator type="regex">
+            <param name="regexExpression"><![CDATA[
+        ([\u4e00-\u9fa5]{2,4})
+            ]]></param>
+            <message>请输入正确的真实姓名</message>
+        </validator>
+    <field name="date">
+        <field-validator type="date">
+            <param name="min">1970-01-01</param>
+            <param name="max">2018-01-01</param>
+            <message>日期必须是${min}-${max}</message>
         </field-validator>
     </field>
 </validators>
