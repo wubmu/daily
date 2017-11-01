@@ -13,7 +13,8 @@
   </head>
   <body>
   <s:form action="upload" method="POST" enctype="multipart/form-data">
-    <s:file name="upload" ></s:file>
+    <s:file label="上传文件1" name="upload" ></s:file>
+    <s:file label="上传文件2" name="upload"></s:file>
     <s:submit value="上传"></s:submit>
   </s:form>
   </body>
