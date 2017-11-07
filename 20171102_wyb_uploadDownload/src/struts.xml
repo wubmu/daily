@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <constant name="struts.multipart.saveDir" value="f:\saveFile"></constant>
+    <package name="upload" extends="struts-default" namespace="/">
+        <action name="upload" class="nuc.wyb.action.UploadAction">
+            <param name="savePath">f:\realPath</param>
+            <result name="uploadOK">index.jsp</result>
+            <result name="input">index.jsp</result>
+        </action>
+        <action name="show" class="nuc.wyb.action.ShowAction">
+            <result name="showAll">index.jsp</result>
+        </action>
+    </package>
+    <package name="download" extends="struts-default">
+        <action name="download" class="nuc.wyb.action.DownloadAction">
+            <param name="path">f:\realPath</param>
+            <result name="success" type="stream">
+                <param name="contentType">${contentType}</param>
+                <param name="contentDisposition">attachment;filename=${fileName}</param>
+                <param name="inputName">targetFile</param>
+            </result>
+        </action>
+    </package>
+</struts>

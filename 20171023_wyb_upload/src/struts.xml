@@ -7,7 +7,7 @@
 <struts>
     <constant name="struts.multipart.saveDir" value="f:\saveFile"></constant>
     <package name="upload" extends="struts-default" namespace="/">
-        <action name="upload" class="nuc.wyb.action.uploadAction">
+        <action name="upload" class="nuc.wyb.action.UploadAction">
             <param name="savePath">f:\realPath</param>
             <result name="uploadOK">success.jsp</result>
             <result name="input">index.jsp</result>
